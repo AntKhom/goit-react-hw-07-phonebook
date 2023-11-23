@@ -11,7 +11,7 @@ const ContactForm = () => {
 
         const newObj = {
             name: e.target.name.value,
-            phone: e.target.number.value,
+            phone: e.target.phone.value,
         };
         
         dispatch(addContact(newObj));
