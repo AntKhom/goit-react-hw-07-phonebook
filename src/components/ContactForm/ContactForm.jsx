@@ -1,28 +1,13 @@
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch} from 'react-redux';
 // import { selectContacts } from 'redux/selectors';
 import { addContact } from 'redux/operations';
 import css from "./contactForm.module.css"
-import { nanoid } from '@reduxjs/toolkit';
 
 const ContactForm = () => {
     const dispatch = useDispatch();
-    // const contacts = useSelector(selectContacts);
-
-
 
     const handleSubmitForm = (e) => {
         e.preventDefault();
-
-        // console.log(e.target.name.value)
-        
-        // const isExistingContact = (name) => { 
-        //     return contacts.some(contact => contact.name === name);
-        // }
-        
-
-        // if (isExistingContact(e.target.name.value)) {
-        //     return alert(`${e.target.name.value} is already in contacts.`);
-        // }
 
         const newObj = {
             name: e.target.name.value,
