@@ -17,7 +17,7 @@ const ContactList = () => {
             {filteredContacts.map(contact => (
                 <tr className={css.contact} key={contact.id}>
                 <td>{contact.name}</td>
-                <td>{contact.number}</td>
+                <td>{contact.phone}</td>
                 <td><button className={css.btnDelete} onClick={() => dispatch(deleteContact(contact.id))}>Delete</button></td>
             </tr>
             )
